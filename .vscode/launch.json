@@ -13,5 +13,14 @@
             ],
             "program": "${workspaceFolder}\\Shapes\\Main.js"
         }
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\Shapes\\mainGaby.js"
+        }
     ]
 }
