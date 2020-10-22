@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\Shapes\\Main.js"
+            "program": "${workspaceFolder}\\Project2\\SE2202_Project2.js"
         }
         {
             "type": "node",
@@ -20,7 +20,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\Shapes\\mainGaby.js"
+            "program": "${workspaceFolder}\\Project2\\SE2202_Project2.js"
         }
     ]
 }
