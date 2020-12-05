@@ -1,19 +1,34 @@
 // SE2202A 001 // Project 3
 //Group 16 (Gabriella Gerges , Rohan Kamra Lyons , Seval Kenar , Suat Kenar , Ethan Machej)
-//Due: Dec 7, 2020
+//Due: Dec 4, 2020
 
 BudgetAnalysis = require('./BudgetAnalysis.js');
 BudgetItem = require('./BudgetItem.js');
 Expense = require('./Expense.js');
 Income = require('./Income.js');
 data= require('./input.json');
-
 let fs = require("fs");
-let months= ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-let years=[2018, 2019];
-let output_data=[];
 
+let output_data=[];
 myBudgetAnalysis= new BudgetAnalysis(data);
+
+
+//---------------------------------------------------------------
+let months= new Set();
+let objs=myBudgetAnalysis.addBudgetItem(data);
+for (let item_m of objs) months.add(item_m.getmonth());
+// IMPORTANT!!! if "Set" is not supported, deactivate the code above and activate the line below
+//let months= ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//--------------------------------------------------------------
+
+//---------------------------------------------------------------
+let years= new Set();
+for (let item_m of objs) years.add(item_m.getyear());
+// IMPORTANT!!! if "Set" is not supported, deactivate the code above and activate the line below
+//let years=[2018, 2019];
+//--------------------------------------------------------------
+
+
 
 for (let month of months)
 {
