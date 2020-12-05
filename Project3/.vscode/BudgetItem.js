@@ -12,7 +12,7 @@ class BudgetItem{
             return __amount__;
         };
         this.setMonth = function(newMonth){
-            __month__ = (newMonth>=0)?newMonth:0;
+            __month__ = newMonth;
         };
         this.getMonth = function(){
             return __month__;
@@ -23,6 +23,9 @@ class BudgetItem{
         this.getYear = function(){
             return __year__;
         };
+        this.getType = function(){
+            return "Other";
+        }
         this.setAmount(amount);
         this.setYear(year);
         this.setMonth(month);

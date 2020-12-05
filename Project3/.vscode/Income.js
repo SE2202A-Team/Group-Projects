@@ -11,6 +11,9 @@ class Income extends BudjetItem{
         this.getSource = function(){
             return __source__;
         }
+        this.getType = function(){
+            return "Income";
+        }
 
     }
 

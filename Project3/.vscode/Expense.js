@@ -6,6 +6,7 @@ class Expense extends BudgetItem{
         super(amount,month,year);
         var __destination__;
         var __spender__;
+       
         this.setSpender= function(x){
             __spender__ = x;
         };
@@ -18,6 +19,9 @@ class Expense extends BudgetItem{
         this.getDestination = function(){
             return __destination__;
         };
+        this.getType = function(){
+            return "Expense";
+        }
         this.setSpender(spender);
         this.setDestination(destination);
 
